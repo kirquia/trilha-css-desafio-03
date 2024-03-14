@@ -1,0 +1,415 @@
+body {
+    display: grid;
+    grid-template-columns: 165px repeat(4, 1fr);
+    grid-template-rows: 56px auto;
+    grid-template-areas: "header header header header header" "sidebar main main main main";
+}
+
+header {
+    padding-right: 16px;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 405px 1fr;
+    grid-template-rows: 56px;
+    grid-template-areas: "esquerda centro direita";
+}
+
+.left {
+    height: 56px;
+    grid-area: esquerda;
+    display: grid;
+    grid-template-columns: 56px 120px 1fr;
+}
+
+.menu {
+    position: relative;
+}
+
+.vector1 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.vector2 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.vector3 {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.logo {
+    padding-left: 10px;
+    place-self: center start;    
+}
+
+.center {
+    height: 56px;
+    grid-area: centro;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "maior menor";
+}
+
+.rectangle1 {
+    grid-area: maior;
+    place-self: center;
+}
+
+.search {
+    position: relative;
+    place-content: center;
+}
+
+.rectangle2 {
+    grid-area: menor;
+    position: absolute;
+    top: 15%;
+    right: 17%;
+}
+
+.lupa1 {
+    grid-area: menor;
+    position: absolute;
+    top: 59%;
+    right: 81%;
+}
+
+.lupa2 {
+    grid-area: menor;
+    position: absolute;
+    top: 33%;
+    right: 91%;
+}
+
+.right {
+    height: 56px;
+    grid-area: direita;
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px;
+    grid-template-areas: ". video bell avatar";
+}
+
+.camera {
+    grid-area: video;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+.camera1 {
+    position: absolute;
+    top: 35%;
+    left: 24%;
+}
+
+.camera2 {
+    position: absolute;
+    top: 39%;
+    left: 56%;
+}
+
+.bell {
+    grid-area: bell;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+.bell1 {
+    position: absolute;
+    top: 64%;
+    left: 41%;
+}
+
+.bell2 {
+    position: absolute;
+    top: 30%;
+    left: 27%;
+}
+
+.avatar {
+    grid-area: avatar;
+    display: grid;
+    place-self: center;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(10, auto);
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.home1 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.home2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.compass1 {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.compass2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.yt1 {
+    position: absolute;
+    top: 30%;
+    left: 48%;
+}
+
+.yt2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.ytmusic1 {
+    position: absolute;
+    top: 37%;
+    left: 43%;
+}
+
+.ytmusic2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.thumbs-up {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.clock1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.clock2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.dl1 {
+    position: absolute;
+    top: 14%;
+    left: 48%;
+}
+
+.dl2 {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+.dl3 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.film1 {
+    position: absolute;
+    top: 33%;
+    left: 60%;
+}
+
+.film2 {
+    position: absolute;
+    top: 58%;
+    left: 60%;
+}
+
+.film3 {
+    position: absolute;
+    top: 33%;
+    left: 27%;
+}
+
+.film4 {
+    position: absolute;
+    top: 58%;
+    left: 27%;
+}
+
+.film5 {
+    position: absolute;
+    top: 46%;
+    left: 25%;
+}
+
+.film6 {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+.film7 {
+    position: absolute;
+    top: 20%;
+    left: 39%;
+}
+
+.film8 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.book1 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.book2 {
+    position: absolute;
+    top: 58%;
+    left: 25%;
+}
+
+.award1 {
+    position: absolute;
+    top: 49%;
+    left: 34%;
+}
+
+.award2 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.text {
+    place-self: center start;    
+}
+
+main {
+    padding-right: 16px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 270px);
+    grid-template-areas: "video11 video6 video3 video1" "video9 video12 video7 video4" "video8 video5 video2 video10";
+}
+
+.video1 {
+    grid-area: video1;    
+    padding: 15px;
+}
+
+.video2 {
+    grid-area: video2;    
+    padding: 15px;
+}
+
+.video3 {
+    grid-area: video3;    
+    padding: 15px;
+}
+
+.video4 {
+    grid-area: video4;    
+    padding: 15px;
+}
+
+.video5 {
+    grid-area: video5;    
+    padding: 15px;
+}
+
+.video6 {
+    grid-area: video6;    
+    padding: 15px;
+}
+
+.video7 {
+    grid-area: video7;    
+    padding: 15px;
+}
+
+.video8 {
+    grid-area: video8;    
+    padding: 15px;
+}
+
+.video9 {
+    grid-area: video9;    
+    padding: 15px;
+}
+
+.video10 {
+    grid-area: video10;    
+    padding: 15px;
+}
+
+.video11 {
+    grid-area: video11;    
+    padding: 15px;
+}
+
+.video12 {
+    grid-area: video12;    
+    padding: 15px;
+}
+
+.v {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 141px auto;
+    grid-template-areas: "image-video image-video" "video-details video-details";
+}
+
+.image-video {
+    grid-area: image-video;
+    width: auto;
+    height: auto;
+    place-self: start center;
+}
+
+.video-details {
+    grid-area: video-details;
+    display: grid;
+    grid: "channel texts" auto / 60px 1fr;
+    padding: 12px;
+}
+
+.channel-avatar {
+    grid-area: channel;
+    place-self: start;
+}
+
+.texts {
+    grid-area: texts;
+    place-self: start;
+}
